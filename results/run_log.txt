@@ -1,0 +1,103 @@
+Model: gemini-3.5-flash-lite
+  N01|clean|llm_plain
+  N01|clean|llm_guided
+  N02|clean|llm_plain
+  N02|clean|llm_guided
+  N03|clean|llm_plain
+  N03|clean|llm_guided
+  N04|clean|llm_plain
+  N04|clean|llm_guided
+  N05|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N05|clean|llm_guided
+  N06|clean|llm_plain
+  N06|clean|llm_guided
+  N07|clean|llm_plain
+  N07|clean|llm_guided
+  N08|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N08|clean|llm_guided
+  N09|clean|llm_plain
+  N09|clean|llm_guided
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N10|clean|llm_plain
+  N10|clean|llm_guided
+  N11|clean|llm_plain
+  N11|clean|llm_guided
+  N12|clean|llm_plain
+  N12|clean|llm_guided
+  N13|clean|llm_plain
+  N13|clean|llm_guided
+  N14|clean|llm_plain
+  N14|clean|llm_guided
+  N15|clean|llm_plain
+  N15|clean|llm_guided
+  N16|clean|llm_plain
+  N16|clean|llm_guided
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 60s.
+  N17|clean|llm_plain
+  N17|clean|llm_guided
+  N18|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N18|clean|llm_guided
+  N19|clean|llm_plain
+  N19|clean|llm_guided
+  N20|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N20|clean|llm_guided
+  N21|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 60s.
+  N21|clean|llm_guided
+  N22|clean|llm_plain
+  N22|clean|llm_guided
+  N23|clean|llm_plain
+  N23|clean|llm_guided
+  N24|clean|llm_plain
+  N24|clean|llm_guided
+  N25|clean|llm_plain
+  N25|clean|llm_guided
+  N26|clean|llm_plain
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N26|clean|llm_guided
+  N27|clean|llm_plain
+  N27|clean|llm_guided
+  N28|clean|llm_plain
+  N28|clean|llm_guided
+  N29|clean|llm_plain
+  N29|clean|llm_guided
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N30|clean|llm_plain
+  N30|clean|llm_guided
+   API error (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is cur...). Waiting 30s.
+  N01|augment
+  N01|messy|llm_guided
+  N02|augment
+  N02|messy|llm_guided
+  N03|augment
+  N03|messy|llm_guided
+  N04|augment
+  N04|messy|llm_guided
+  N05|augment
+  N05|messy|llm_guided
+  N06|augment
+  N06|messy|llm_guided
+  N07|augment
+  N07|messy|llm_guided
+  N08|augment
+  N08|messy|llm_guided
+  N09|augment
+  N09|messy|llm_guided
+  N10|augment
+  N10|messy|llm_guided
+
+F1 (diagnoses / medications / allergies) and trap rates:
+  clean|rules        n=30  dx 0.67  med 0.80  allergy 1.00  dose 1.00  fooled neg/fam/stop 1.00/1.00/1.00
+  clean|llm_plain    n=30  dx 0.60  med 1.00  allergy 1.00  dose 0.17  fooled neg/fam/stop 0.00/0.00/0.00
+  clean|llm_guided   n=30  dx 0.99  med 1.00  allergy 1.00  dose 0.98  fooled neg/fam/stop 0.00/0.00/0.00
+  messy|rules        n=10  dx 0.64  med 0.75  allergy 0.82  dose 0.93  fooled neg/fam/stop 0.70/0.60/0.80
+  messy|llm_guided   n=10  dx 1.00  med 1.00  allergy 1.00  dose 1.00  fooled neg/fam/stop 0.00/0.00/0.00
+
+Augmentation: 0/10 rewrites changed a fact and were excluded.
+Now run: python visualise.py

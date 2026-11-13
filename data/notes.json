@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "N01",
+    "text": "68-year-old woman reviewed in clinic today. PMH: atrial fibrillation, COPD, hypothyroidism. No known type II diabetes mellitus. She takes omeprazole 20 mg at night. Bisoprolol was stopped last year due to side effects. Allergies: codeine, penicillin (rash). Non-smoker, never smoked. Mother had osteoarthritis. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "type 2 diabetes"
+      ],
+      "family": [
+        "osteoarthritis"
+      ],
+      "stopped": [
+        "bisoprolol"
+      ]
+    }
+  },
+  {
+    "id": "N02",
+    "text": "Pt is a 65yo F, seen for routine follow-up. PMH: asthma. No known low mood (diagnosed depression). Current meds: ramipril 2.5mg at night, atorvastatin 20mg once daily. Apixaban was stopped last year due to side effects. Allergies: penicillin (rash). Ex-smoker, quit in 2015. Mother had CKD stage 3. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 65,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "depression"
+      ],
+      "family": [
+        "chronic kidney disease"
+      ],
+      "stopped": [
+        "apixaban"
+      ]
+    }
+  },
+  {
+    "id": "N03",
+    "text": "Review of Mr X, aged 81. PMH: OA of the knees, chronic obstructive pulmonary disease. No history of type II diabetes mellitus. Current meds: atorvastatin 20 mg once daily, salbutamol 100 mcg at night, amlodipine 10 mg od. Sertraline was stopped last year due to side effects. Allergies: NSAIDs (rash). Never smoked. Father had high blood pressure. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "type 2 diabetes"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "sertraline"
+      ]
+    }
+  },
+  {
+    "id": "N04",
+    "text": "52-year-old woman reviewed in clinic today. PMH: underactive thyroid, COPD, HF. Denies OA of the knees. She takes metformin 1000 mg od. Sertraline was stopped last year due to side effects. Allergies: penicillin (rash). Never smoked. Mother had HTN. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "heart failure",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "osteoarthritis"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "sertraline"
+      ]
+    }
+  },
+  {
+    "id": "N05",
+    "text": "Pt is a 85yo M, seen for routine follow-up. PMH: chronic obstructive pulmonary disease, asthma. No known OA of the knees. Current meds: amlodipine 5mg once daily. Atorvastatin was stopped last year due to side effects. Allergies: penicillin (rash). Stopped smoking 10 years ago. Brother had hypertension. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 85,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "osteoarthritis"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "atorvastatin"
+      ]
+    }
+  },
+  {
+    "id": "N06",
+    "text": "Review of Mrs X, aged 46. PMH: hypertension, AFib. No known COPD. Current meds: omeprazole 20 mg bd. Salbutamol was stopped last year due to side effects. NKDA. Stopped smoking 10 years ago. Brother had low mood (diagnosed depression). BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "COPD"
+      ],
+      "family": [
+        "depression"
+      ],
+      "stopped": [
+        "salbutamol"
+      ]
+    }
+  },
+  {
+    "id": "N07",
+    "text": "43-year-old woman reviewed in clinic today. PMH: T2DM, OA of the knees, low mood (diagnosed depression). No known underactive thyroid. She takes ramipril 5 mg od; omeprazole 20 mg once daily; apixaban 5 mg twice daily. Atorvastatin was stopped last year due to side effects. Allergies: latex, NSAIDs (rash). Ex-smoker, quit in 2015. Mother had hypertension. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "depression",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "hypothyroidism"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "atorvastatin"
+      ]
+    }
+  },
+  {
+    "id": "N08",
+    "text": "Pt is a 28yo F, seen for routine follow-up. PMH: hypertension, chronic obstructive pulmonary disease, type 2 diabetes. Denies asthma. Current meds: bisoprolol 5mg once daily. Atorvastatin was stopped last year due to side effects. Allergies: latex (rash). Current smoker. Mother had chronic kidney disease. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 28,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "hypertension",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "traps": {
+      "negated": [
+        "asthma"
+      ],
+      "family": [
+        "chronic kidney disease"
+      ],
+      "stopped": [
+        "atorvastatin"
+      ]
+    }
+  },
+  {
+    "id": "N09",
+    "text": "Review of Mrs X, aged 54. PMH: hypertension, T2DM, OA of the knees. No history of heart failure. Current meds: amlodipine 5 mg once daily, atorvastatin 40 mg at night. Levothyroxine was stopped last year due to side effects. NKDA. Ex-smoker, quit in 2015. Father had hypothyroidism. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "heart failure"
+      ],
+      "family": [
+        "hypothyroidism"
+      ],
+      "stopped": [
+        "levothyroxine"
+      ]
+    }
+  },
+  {
+    "id": "N10",
+    "text": "54-year-old woman reviewed in clinic today. PMH: chronic kidney disease. Denies hypertension. She takes metformin 1000 mg twice daily; sertraline 100 mg once daily. Levothyroxine was stopped last year due to side effects. Allergies: codeine (rash). Never smoked. Mother had COPD. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "hypertension"
+      ],
+      "family": [
+        "COPD"
+      ],
+      "stopped": [
+        "levothyroxine"
+      ]
+    }
+  },
+  {
+    "id": "N11",
+    "text": "Pt is a 31yo M, seen for routine follow-up. PMH: asthma. No history of T2DM. Current meds: atorvastatin 20mg twice daily, sertraline 50mg bd, amlodipine 10mg twice daily. Levothyroxine was stopped last year due to side effects. Allergies: NSAIDs, latex (rash). Never smoked. Father had COPD. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 31,
+      "sex": "M",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "type 2 diabetes"
+      ],
+      "family": [
+        "COPD"
+      ],
+      "stopped": [
+        "levothyroxine"
+      ]
+    }
+  },
+  {
+    "id": "N12",
+    "text": "Review of Mr X, aged 67. PMH: type II diabetes mellitus. No known OA of the knees. Current meds: salbutamol 100 mcg at night, ramipril 5 mg once daily, levothyroxine 100 mcg at night. Amlodipine was stopped last year due to side effects. No known drug allergies. Ex-smoker, quit in 2015. Brother had AFib. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 67,
+      "sex": "M",
+      "diagnoses": [
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "osteoarthritis"
+      ],
+      "family": [
+        "atrial fibrillation"
+      ],
+      "stopped": [
+        "amlodipine"
+      ]
+    }
+  },
+  {
+    "id": "N13",
+    "text": "35-year-old man reviewed in clinic today. PMH: hypothyroidism, asthma, AF. No history of COPD. He takes levothyroxine 100 mcg twice daily. Atorvastatin was stopped last year due to side effects. Allergies: codeine, latex (rash). Never smoked. Father had depression. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 35,
+      "sex": "M",
+      "diagnoses": [
+        "asthma",
+        "atrial fibrillation",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "COPD"
+      ],
+      "family": [
+        "depression"
+      ],
+      "stopped": [
+        "atorvastatin"
+      ]
+    }
+  },
+  {
+    "id": "N14",
+    "text": "Pt is a 63yo F, seen for routine follow-up. PMH: asthma. No history of OA of the knees. Current meds: furosemide 40mg od, bisoprolol 2.5mg once daily. Ramipril was stopped last year due to side effects. No known drug allergies. Ex-smoker, quit in 2015. Mother had high blood pressure. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 63,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "osteoarthritis"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "ramipril"
+      ]
+    }
+  },
+  {
+    "id": "N15",
+    "text": "Review of Mrs X, aged 83. PMH: chronic kidney disease. No history of HTN. Current meds: levothyroxine 50 mcg od, sertraline 50 mg od, atorvastatin 40 mg once daily. Apixaban was stopped last year due to side effects. NKDA. Stopped smoking 10 years ago. Father had chronic obstructive pulmonary disease. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "hypertension"
+      ],
+      "family": [
+        "COPD"
+      ],
+      "stopped": [
+        "apixaban"
+      ]
+    }
+  },
+  {
+    "id": "N16",
+    "text": "83-year-old woman reviewed in clinic today. PMH: HF, underactive thyroid. No known low mood (diagnosed depression). She takes levothyroxine 50 mcg bd; metformin 1000 mg at night; amlodipine 5 mg od. Apixaban was stopped last year due to side effects. No known drug allergies. Smokes 10 cigarettes a day. Father had chronic kidney disease. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "heart failure",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "traps": {
+      "negated": [
+        "depression"
+      ],
+      "family": [
+        "chronic kidney disease"
+      ],
+      "stopped": [
+        "apixaban"
+      ]
+    }
+  },
+  {
+    "id": "N17",
+    "text": "Pt is a 61yo M, seen for routine follow-up. PMH: chronic obstructive pulmonary disease, heart failure, chronic kidney disease. Denies high blood pressure. Current meds: furosemide 40mg at night, levothyroxine 100mcg at night. Amlodipine was stopped last year due to side effects. Allergies: NSAIDs (rash). Stopped smoking 10 years ago. Father had osteoarthritis. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 61,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "chronic kidney disease",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "hypertension"
+      ],
+      "family": [
+        "osteoarthritis"
+      ],
+      "stopped": [
+        "amlodipine"
+      ]
+    }
+  },
+  {
+    "id": "N18",
+    "text": "Review of Mrs X, aged 47. PMH: OA of the knees, heart failure. No history of underactive thyroid. Current meds: omeprazole 20 mg od, atorvastatin 20 mg once daily. Furosemide was stopped last year due to side effects. NKDA. Stopped smoking 10 years ago. Mother had COPD. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 47,
+      "sex": "F",
+      "diagnoses": [
+        "heart failure",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "hypothyroidism"
+      ],
+      "family": [
+        "COPD"
+      ],
+      "stopped": [
+        "furosemide"
+      ]
+    }
+  },
+  {
+    "id": "N19",
+    "text": "57-year-old woman reviewed in clinic today. PMH: OA of the knees, COPD, chronic kidney disease. No history of AF. She takes ramipril 2.5 mg at night. Metformin was stopped last year due to side effects. Allergies: latex (rash). Non-smoker, never smoked. Mother had HF. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 57,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "chronic kidney disease",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "atrial fibrillation"
+      ],
+      "family": [
+        "heart failure"
+      ],
+      "stopped": [
+        "metformin"
+      ]
+    }
+  },
+  {
+    "id": "N20",
+    "text": "Pt is a 81yo M, seen for routine follow-up. PMH: asthma, depression. No known OA of the knees. Current meds: omeprazole 20mg twice daily. Salbutamol was stopped last year due to side effects. No known drug allergies. Ex-smoker, quit in 2015. Mother had chronic obstructive pulmonary disease. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "asthma",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "osteoarthritis"
+      ],
+      "family": [
+        "COPD"
+      ],
+      "stopped": [
+        "salbutamol"
+      ]
+    }
+  },
+  {
+    "id": "N21",
+    "text": "Review of Mrs X, aged 42. PMH: chronic obstructive pulmonary disease. No known type II diabetes mellitus. Current meds: levothyroxine 100 mcg bd, bisoprolol 2.5 mg once daily. Furosemide was stopped last year due to side effects. No known drug allergies. Stopped smoking 10 years ago. Mother had underactive thyroid. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 42,
+      "sex": "F",
+      "diagnoses": [
+        "COPD"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "type 2 diabetes"
+      ],
+      "family": [
+        "hypothyroidism"
+      ],
+      "stopped": [
+        "furosemide"
+      ]
+    }
+  },
+  {
+    "id": "N22",
+    "text": "62-year-old man reviewed in clinic today. PMH: osteoarthritis, COPD, low mood (diagnosed depression). No known type II diabetes mellitus. He takes apixaban 5 mg once daily; metformin 1000 mg bd. Bisoprolol was stopped last year due to side effects. NKDA. Ex-smoker, quit in 2015. Brother had atrial fibrillation. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 62,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "depression",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "type 2 diabetes"
+      ],
+      "family": [
+        "atrial fibrillation"
+      ],
+      "stopped": [
+        "bisoprolol"
+      ]
+    }
+  },
+  {
+    "id": "N23",
+    "text": "Pt is a 44yo F, seen for routine follow-up. PMH: depression. Denies heart failure. Current meds: salbutamol 100mcg once daily, sertraline 100mg once daily. Levothyroxine was stopped last year due to side effects. NKDA. Smokes 10 cigarettes a day. Brother had chronic kidney disease. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 44,
+      "sex": "F",
+      "diagnoses": [
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "traps": {
+      "negated": [
+        "heart failure"
+      ],
+      "family": [
+        "chronic kidney disease"
+      ],
+      "stopped": [
+        "levothyroxine"
+      ]
+    }
+  },
+  {
+    "id": "N24",
+    "text": "Review of Mrs X, aged 43. PMH: type 2 diabetes, chronic obstructive pulmonary disease, low mood (diagnosed depression). Denies hypothyroidism. Current meds: ramipril 2.5 mg od, furosemide 40 mg once daily. Amlodipine was stopped last year due to side effects. No known drug allergies. Current smoker. Mother had AFib. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "depression",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "traps": {
+      "negated": [
+        "hypothyroidism"
+      ],
+      "family": [
+        "atrial fibrillation"
+      ],
+      "stopped": [
+        "amlodipine"
+      ]
+    }
+  },
+  {
+    "id": "N25",
+    "text": "62-year-old woman reviewed in clinic today. PMH: type 2 diabetes, underactive thyroid. No known CKD stage 3. She takes apixaban 5 mg at night; amlodipine 10 mg twice daily. Bisoprolol was stopped last year due to side effects. No known drug allergies. Ex-smoker, quit in 2015. Father had HTN. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 62,
+      "sex": "F",
+      "diagnoses": [
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "chronic kidney disease"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "bisoprolol"
+      ]
+    }
+  },
+  {
+    "id": "N26",
+    "text": "Pt is a 84yo F, seen for routine follow-up. PMH: OA of the knees, chronic kidney disease. No known heart failure. Current meds: levothyroxine 50mcg bd, ramipril 5mg bd. Furosemide was stopped last year due to side effects. Allergies: NSAIDs (rash). Stopped smoking 10 years ago. Mother had hypertension. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 84,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "heart failure"
+      ],
+      "family": [
+        "hypertension"
+      ],
+      "stopped": [
+        "furosemide"
+      ]
+    }
+  },
+  {
+    "id": "N27",
+    "text": "Review of Mr X, aged 56. PMH: AF. Denies COPD. Current meds: atorvastatin 40 mg twice daily, salbutamol 100 mcg once daily, levothyroxine 100 mcg at night. Omeprazole was stopped last year due to side effects. Allergies: codeine (rash). Ex-smoker, quit in 2015. Mother had hypothyroidism. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "former"
+    },
+    "traps": {
+      "negated": [
+        "COPD"
+      ],
+      "family": [
+        "hypothyroidism"
+      ],
+      "stopped": [
+        "omeprazole"
+      ]
+    }
+  },
+  {
+    "id": "N28",
+    "text": "75-year-old woman reviewed in clinic today. PMH: osteoarthritis, underactive thyroid, AFib. No history of high blood pressure. She takes atorvastatin 40 mg once daily; levothyroxine 50 mcg at night. Ramipril was stopped last year due to side effects. Allergies: latex, codeine (rash). Non-smoker, never smoked. Father had asthma. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 75,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "hypothyroidism",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "hypertension"
+      ],
+      "family": [
+        "asthma"
+      ],
+      "stopped": [
+        "ramipril"
+      ]
+    }
+  },
+  {
+    "id": "N29",
+    "text": "Pt is a 56yo F, seen for routine follow-up. PMH: AFib. Denies hypothyroidism. Current meds: sertraline 50mg at night. Bisoprolol was stopped last year due to side effects. Allergies: penicillin, codeine (rash). Non-smoker, never smoked. Mother had type 2 diabetes. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 56,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "hypothyroidism"
+      ],
+      "family": [
+        "type 2 diabetes"
+      ],
+      "stopped": [
+        "bisoprolol"
+      ]
+    }
+  },
+  {
+    "id": "N30",
+    "text": "Review of Mr X, aged 56. PMH: osteoarthritis, chronic kidney disease. No history of atrial fibrillation. Current meds: metformin 500 mg at night, furosemide 40 mg bd, amlodipine 5 mg twice daily. Levothyroxine was stopped last year due to side effects. NKDA. Never smoked. Father had HF. BP stable today. Plan: continue current treatment and review in 3 months.",
+    "truth": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "chronic kidney disease",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "metformin",
+          "dose": "500 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "never"
+    },
+    "traps": {
+      "negated": [
+        "atrial fibrillation"
+      ],
+      "family": [
+        "heart failure"
+      ],
+      "stopped": [
+        "levothyroxine"
+      ]
+    }
+  }
+]

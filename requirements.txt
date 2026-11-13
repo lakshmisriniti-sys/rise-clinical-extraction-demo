@@ -1,0 +1,4 @@
+google-genai
+plotly
+matplotlib
+python-dotenv

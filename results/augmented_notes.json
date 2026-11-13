@@ -1,0 +1,52 @@
+[
+  {
+    "id": "N01",
+    "text": "68yo F in clinic today. PMH: AF, COPD, hypothyroidism. No T2DM. Meds: omeprazole 20mg qhs. Bisoprolol stopped last yr 2/t side effects. Nkda: codeine, penicillin (rash). Never smoker. FamHx: mother w/ OA. BP stable. Plan: cont current meds, rvw in 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N02",
+    "text": "65F routine f/u. PMH asthma. No dep. Current meds: ramipril 2.5mg qhs, atorvastatin 20mg qd. Apixaban d/c'd last yr r/t s/e. Allg: penicilin (rash). Ex-smoker, quit 2015. FamHx: mother CKD3. BP stable. Plan: cont meds, r/v 3mos.",
+    "problems": []
+  },
+  {
+    "id": "N03",
+    "text": "81M, never smoked. Rev today - BP stable. PMH: COPD, knee OA. Neg T2DM. Meds: atorvas 20mg daily, amlodipine 10mg od, salbutamol 100mcg qhs. Stopped sertraline last yr (side effx). Allergies: NSAIDs -> rash. FamHx: father HTN. Plan: cont meds, rev in 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N04",
+    "text": "52yo F seen in clnic today. PMH: hypothyroid, COPD, HF. No knee OA. Meds: metformine 1000mg OD. Sertraline dc'd last yr 2/2 side fx. Allergies: PCN (rash). Never smoker. FamHx: mother w/ HTN. BP stable. Plan: cont tx, rvu 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N05",
+    "text": "85M rountine f/u. PMH: COPD, asthma. No knee OA. Meds: amlodipine 5mg QD. Atorva stopped last yr 2/2 side effects. All: PCN -> rash. Ex-smoker (quitted 10 yrs ago). FamHx: bro w/ HTN. BP stable. Plan: cont meds, r/v 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N06",
+    "text": "46yo F, ex-smoker (quit 10yrs). PMH: HTN, AFib. No COPD. NKDA. \nMeds: omeprazole 20mg bd. Salbutamol d/c last yr d/t SEs. \nFamhx: bro w/ depression. \nBP stable today. \nPlan: cont meds, f/u in 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N07",
+    "text": "43yo F rev today. PMH: T2DM, knee OA, depr. No hypothyroidism. Meds: ramipril 5mg od, omeprazole 20mg od, apixaban 5mg bid. Stopped atorvastatin last yr s/p side fx. All: latex, NSAIDs (rash). Ex-smoker (quit 2015). FamHx: mom w/ HTN. BP stable. Plan: cont meds, rev in 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N08",
+    "text": "28F routine f/u. PMH: HTN, COPD, T2DM. No asthma. Smoker. Meds: bisoprolol 5mg QD. Atorvastatin DCd last yr 2/2 sfx. Alls: latex -> rash. FamHx: mother w/ CKD. BP stable. Pln: cont meds, rvw in 3 mos.",
+    "problems": []
+  },
+  {
+    "id": "N09",
+    "text": "Rev Mrs X, 54yo F, ex-smoker (quit '15). PMH: HTN, T2DM, knee OA. Neg HF. Famhx: hypothyroid (dad). NKDA. Meds: amlodipine 5mg QD, atorvastatin 40mg QHS. Levothyroxyne stopped last yr s/p side effects. BP stable. Pln: cont meds, rvw 3mos.",
+    "problems": []
+  },
+  {
+    "id": "N10",
+    "text": "54yo F seen in clinic today. PMH: CKD. No HTN. Meds: metfomin 1000mg BID, sertraline 100mg daily. Levothyroxine d/c'd last yr 2/2 sfx. NKFA except codeine -> rash. Never smoker. Famhx: mother w/ COPD. BP stable. Plan: cont current meds, f/u 3 mos.",
+    "problems": []
+  }
+]

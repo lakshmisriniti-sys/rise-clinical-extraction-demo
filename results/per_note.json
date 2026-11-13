@@ -1,0 +1,7673 @@
+[
+  {
+    "id": "N01",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "hypothyroidism",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "osteoarthritis",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "bisoprolol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N01",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "COPD",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N01",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "COPD",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N02",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 65,
+      "sex": "F",
+      "diagnoses": [
+        "asthma",
+        "chronic kidney disease",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "chronic kidney disease",
+          "depression"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "apixaban"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N02",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 65,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N02",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 65,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N03",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "hypertension",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "sertraline"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N03",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "OA of the knees",
+        "chronic obstructive pulmonary disease"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg once daily"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg at night"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg od"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease",
+          "oa of the knees"
+        ],
+        "missed": [
+          "copd",
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N03",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "osteoarthritis",
+        "COPD"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N04",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "heart failure",
+        "hypertension",
+        "hypothyroidism",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "sertraline"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N04",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "underactive thyroid",
+        "COPD",
+        "HF"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg od"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "hf",
+          "underactive thyroid"
+        ],
+        "missed": [
+          "heart failure",
+          "hypothyroidism"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N04",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "hypothyroidism",
+        "COPD",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N05",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 85,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "hypertension",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N05",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 85,
+      "sex": "M",
+      "diagnoses": [
+        "chronic obstructive pulmonary disease",
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5mg once daily"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease"
+        ],
+        "missed": [
+          "copd"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N05",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 85,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N06",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "depression",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "depression"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "salbutamol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N06",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "AFib"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg bd"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "afib"
+        ],
+        "missed": [
+          "atrial fibrillation"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N06",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg bd"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N07",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "depression",
+        "hypertension",
+        "hypothyroidism",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": null
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N07",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "Type 2 Diabetes Mellitus",
+        "Osteoarthritis of the knees",
+        "Depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg od"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg once daily"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg twice daily"
+        }
+      ],
+      "allergies": [
+        "latex",
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "osteoarthritis of the knees",
+          "type 2 diabetes mellitus"
+        ],
+        "missed": [
+          "osteoarthritis",
+          "type 2 diabetes"
+        ]
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N07",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "osteoarthritis",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex",
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N08",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 28,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "chronic kidney disease",
+        "hypertension",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": null
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "asthma",
+          "chronic kidney disease"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N08",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 28,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "chronic obstructive pulmonary disease",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "5mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease"
+        ],
+        "missed": [
+          "copd"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N08",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 28,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "COPD",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N09",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "heart failure",
+        "hypertension",
+        "hypothyroidism",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "heart failure",
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N09",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "T2DM",
+        "OA of the knees"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg once daily"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg at night"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "oa of the knees",
+          "t2dm"
+        ],
+        "missed": [
+          "osteoarthritis",
+          "type 2 diabetes"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N09",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "type 2 diabetes",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N10",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "chronic kidney disease",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": null
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N10",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg twice daily"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg once daily"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N10",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N11",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 31,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": null
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N11",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 31,
+      "sex": "M",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20mg twice daily"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50mg bd"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10mg twice daily"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N11",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 31,
+      "sex": "M",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N12",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 67,
+      "sex": "M",
+      "diagnoses": [
+        "atrial fibrillation",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": null
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "atrial fibrillation",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "amlodipine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N12",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 67,
+      "sex": "M",
+      "diagnoses": [
+        "type II diabetes mellitus"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg at night"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg once daily"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg at night"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "type ii diabetes mellitus"
+        ],
+        "missed": [
+          "type 2 diabetes"
+        ]
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N12",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 67,
+      "sex": "M",
+      "diagnoses": [
+        "type 2 diabetes",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N13",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 35,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "atrial fibrillation",
+        "depression",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": null
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "depression"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N13",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 35,
+      "sex": "M",
+      "diagnoses": [
+        "hypothyroidism",
+        "asthma",
+        "AF"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg twice daily"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "af"
+        ],
+        "missed": [
+          "atrial fibrillation"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N13",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 35,
+      "sex": "M",
+      "diagnoses": [
+        "hypothyroidism",
+        "asthma",
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N14",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 63,
+      "sex": "F",
+      "diagnoses": [
+        "asthma",
+        "hypertension",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": null
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "ramipril"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N14",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 63,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40mg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N14",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 63,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N15",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "chronic kidney disease",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "apixaban"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N15",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg od"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg od"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg once daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N15",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N16",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease",
+        "depression",
+        "heart failure",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "apixaban",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "chronic kidney disease",
+          "depression"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "apixaban"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N16",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "Heart failure",
+        "Hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg bd"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg at night"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg od"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N16",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 83,
+      "sex": "F",
+      "diagnoses": [
+        "heart failure",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N17",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 61,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "chronic kidney disease",
+        "heart failure",
+        "hypertension",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": null
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "amlodipine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N17",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 61,
+      "sex": "M",
+      "diagnoses": [
+        "chronic obstructive pulmonary disease",
+        "heart failure",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100mcg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease"
+        ],
+        "missed": [
+          "copd"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N17",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 61,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "heart failure",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N18",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 47,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "heart failure",
+        "hypothyroidism",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "furosemide"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N18",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 47,
+      "sex": "F",
+      "diagnoses": [
+        "OA of the knees",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg od"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg once daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "oa of the knees"
+        ],
+        "missed": [
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N18",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 47,
+      "sex": "F",
+      "diagnoses": [
+        "osteoarthritis",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N19",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 57,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "chronic kidney disease",
+        "heart failure",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": null
+        },
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "atrial fibrillation",
+          "heart failure"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "metformin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N19",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 57,
+      "sex": "F",
+      "diagnoses": [
+        "OA of the knees",
+        "COPD",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "oa of the knees"
+        ],
+        "missed": [
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N19",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 57,
+      "sex": "F",
+      "diagnoses": [
+        "osteoarthritis",
+        "COPD",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N20",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "depression",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "osteoarthritis"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "salbutamol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N20",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "asthma",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20mg twice daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N20",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "asthma",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N21",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 42,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypothyroidism",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "furosemide"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N21",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 42,
+      "sex": "F",
+      "diagnoses": [
+        "chronic obstructive pulmonary disease"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg bd"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg once daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease"
+        ],
+        "missed": [
+          "copd"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N21",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 42,
+      "sex": "F",
+      "diagnoses": [
+        "COPD"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "2.5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N22",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 62,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "depression",
+        "osteoarthritis",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "atrial fibrillation",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "bisoprolol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N22",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 62,
+      "sex": "M",
+      "diagnoses": [
+        "osteoarthritis",
+        "COPD",
+        "low mood",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg once daily"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg bd"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "low mood"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N22",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 62,
+      "sex": "M",
+      "diagnoses": [
+        "osteoarthritis",
+        "COPD",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N23",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 44,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease",
+        "depression",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": null
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "chronic kidney disease",
+          "heart failure"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N23",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 44,
+      "sex": "F",
+      "diagnoses": [
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100mcg once daily"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100mg once daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N23",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 44,
+      "sex": "F",
+      "diagnoses": [
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N24",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "depression",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": null
+        },
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "atrial fibrillation",
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "amlodipine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N24",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "chronic obstructive pulmonary disease",
+        "low mood",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg od"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg once daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 1,
+        "wrong_extra": [
+          "chronic obstructive pulmonary disease",
+          "low mood"
+        ],
+        "missed": [
+          "copd"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N24",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "COPD",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N25",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 62,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease",
+        "hypertension",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "chronic kidney disease",
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "bisoprolol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N25",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 62,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "underactive thyroid"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg at night"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg twice daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "underactive thyroid"
+        ],
+        "missed": [
+          "hypothyroidism"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N25",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 62,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N26",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 84,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease",
+        "heart failure",
+        "hypertension",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        },
+        {
+          "name": "furosemide",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "heart failure",
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "furosemide"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N26",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 84,
+      "sex": "F",
+      "diagnoses": [
+        "OA of the knees",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50mcg bd"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5mg bd"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "oa of the knees"
+        ],
+        "missed": [
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N26",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 84,
+      "sex": "F",
+      "diagnoses": [
+        "osteoarthritis",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "50mcg"
+        },
+        {
+          "name": "ramipril",
+          "dose": "5mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N27",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "hypothyroidism"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "omeprazole"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N27",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "AF"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg twice daily"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg once daily"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg at night"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "af"
+        ],
+        "missed": [
+          "atrial fibrillation"
+        ]
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N27",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N28",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 75,
+      "sex": "F",
+      "diagnoses": [
+        "asthma",
+        "atrial fibrillation",
+        "hypertension",
+        "hypothyroidism",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": null
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "latex"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "asthma",
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "ramipril"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N28",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 75,
+      "sex": "F",
+      "diagnoses": [
+        "osteoarthritis",
+        "underactive thyroid",
+        "AFib"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg once daily"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg at night"
+        }
+      ],
+      "allergies": [
+        "latex",
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "afib",
+          "underactive thyroid"
+        ],
+        "missed": [
+          "atrial fibrillation",
+          "hypothyroidism"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N28",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 75,
+      "sex": "F",
+      "diagnoses": [
+        "osteoarthritis",
+        "hypothyroidism",
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": "50 mcg"
+        }
+      ],
+      "allergies": [
+        "latex",
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N29",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 56,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        },
+        {
+          "name": "bisoprolol",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "hypothyroidism",
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "bisoprolol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N29",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 56,
+      "sex": "F",
+      "diagnoses": [
+        "AFib"
+      ],
+      "medications": [
+        {
+          "name": "sertraline",
+          "dose": "50mg"
+        }
+      ],
+      "allergies": [
+        "penicillin",
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "afib"
+        ],
+        "missed": [
+          "atrial fibrillation"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N29",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 56,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "sertraline",
+          "dose": "50 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin",
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N30",
+    "dataset": "clean",
+    "method": "rules",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "atrial fibrillation",
+        "chronic kidney disease",
+        "heart failure",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "500 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "levothyroxine",
+          "dose": null
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "atrial fibrillation",
+          "heart failure"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N30",
+    "dataset": "clean",
+    "method": "llm_plain",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "osteoarthritis",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "500 mg at night"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg bd"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg twice daily"
+        }
+      ],
+      "allergies": [],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 0,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N30",
+    "dataset": "clean",
+    "method": "llm_guided",
+    "pred": {
+      "age": 56,
+      "sex": "M",
+      "diagnoses": [
+        "osteoarthritis",
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "500 mg"
+        },
+        {
+          "name": "furosemide",
+          "dose": "40 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N01",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "type 2 diabetes"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "bisoprolol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": false
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": false,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N01",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 68,
+      "sex": "F",
+      "diagnoses": [
+        "atrial fibrillation",
+        "COPD",
+        "hypothyroidism"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "codeine",
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N02",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": null,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "apixaban"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "wrong_extra": [],
+        "missed": [
+          "penicillin"
+        ]
+      },
+      "age": {
+        "correct": false
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N02",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 65,
+      "sex": "F",
+      "diagnoses": [
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "2.5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N03",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": null,
+      "sex": null,
+      "diagnoses": [
+        "COPD",
+        "hypertension",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        },
+        {
+          "name": "sertraline",
+          "dose": null
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 1,
+        "wrong_extra": [
+          "hypertension",
+          "type 2 diabetes"
+        ],
+        "missed": [
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "sertraline"
+        ],
+        "missed": [
+          "atorvastatin"
+        ]
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": false
+      },
+      "sex": {
+        "correct": false
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N03",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 81,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": "20 mg"
+        },
+        {
+          "name": "amlodipine",
+          "dose": "10 mg"
+        },
+        {
+          "name": "salbutamol",
+          "dose": "100 mcg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N04",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "heart failure",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": null
+        },
+        {
+          "name": "sertraline",
+          "dose": null
+        }
+      ],
+      "allergies": [],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "hypertension"
+        ],
+        "missed": [
+          "hypothyroidism"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "sertraline"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "wrong_extra": [],
+        "missed": [
+          "penicillin"
+        ]
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": false
+      },
+      "dose_correct": 0,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N04",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 52,
+      "sex": "F",
+      "diagnoses": [
+        "hypothyroidism",
+        "COPD",
+        "heart failure"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N05",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": null,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "hypertension"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "wrong_extra": [],
+        "missed": [
+          "penicillin"
+        ]
+      },
+      "age": {
+        "correct": false
+      },
+      "sex": {
+        "correct": false
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": true,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N05",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 85,
+      "sex": "M",
+      "diagnoses": [
+        "COPD",
+        "asthma"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "penicillin"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N06",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "atrial fibrillation",
+        "depression",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "salbutamol",
+          "dose": null
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "wrong_extra": [
+          "copd",
+          "depression"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "salbutamol"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N06",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 46,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "atrial fibrillation"
+      ],
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N07",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "hypothyroidism",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": null
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        }
+      ],
+      "allergies": [
+        "NSAIDs",
+        "latex"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "wrong_extra": [
+          "hypertension",
+          "hypothyroidism"
+        ],
+        "missed": [
+          "depression",
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N07",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 43,
+      "sex": "F",
+      "diagnoses": [
+        "type 2 diabetes",
+        "osteoarthritis",
+        "depression"
+      ],
+      "medications": [
+        {
+          "name": "ramipril",
+          "dose": "5 mg"
+        },
+        {
+          "name": "omeprazole",
+          "dose": "20 mg"
+        },
+        {
+          "name": "apixaban",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex",
+        "NSAIDs"
+      ],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 3,
+      "dose_total": 3,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N08",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": null,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "asthma",
+        "hypertension",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "atorvastatin",
+          "dose": null
+        },
+        {
+          "name": "bisoprolol",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "asthma"
+        ],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "wrong_extra": [
+          "atorvastatin"
+        ],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": false
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": false,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N08",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 28,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "COPD",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "bisoprolol",
+          "dose": "5 mg"
+        }
+      ],
+      "allergies": [
+        "latex"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N09",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "heart failure",
+        "hypertension",
+        "type 2 diabetes"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "heart failure"
+        ],
+        "missed": [
+          "osteoarthritis"
+        ]
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": true,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N09",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "hypertension",
+        "type 2 diabetes",
+        "osteoarthritis"
+      ],
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg"
+        }
+      ],
+      "allergies": [],
+      "smoking": "former"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  },
+  {
+    "id": "N10",
+    "dataset": "messy",
+    "method": "rules",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "COPD",
+        "hypertension"
+      ],
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": null
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "current"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "wrong_extra": [
+          "copd",
+          "hypertension"
+        ],
+        "missed": [
+          "chronic kidney disease"
+        ]
+      },
+      "medications": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "wrong_extra": [
+          "levothyroxine"
+        ],
+        "missed": [
+          "metformin"
+        ]
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": false
+      },
+      "dose_correct": 1,
+      "dose_total": 1,
+      "fooled_by": {
+        "negation": true,
+        "family history": true,
+        "stopped medicine": true
+      }
+    }
+  },
+  {
+    "id": "N10",
+    "dataset": "messy",
+    "method": "llm_guided",
+    "pred": {
+      "age": 54,
+      "sex": "F",
+      "diagnoses": [
+        "chronic kidney disease"
+      ],
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg"
+        },
+        {
+          "name": "sertraline",
+          "dose": "100 mg"
+        }
+      ],
+      "allergies": [
+        "codeine"
+      ],
+      "smoking": "never"
+    },
+    "score": {
+      "diagnoses": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "medications": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "allergies": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "wrong_extra": [],
+        "missed": []
+      },
+      "age": {
+        "correct": true
+      },
+      "sex": {
+        "correct": true
+      },
+      "smoking": {
+        "correct": true
+      },
+      "dose_correct": 2,
+      "dose_total": 2,
+      "fooled_by": {
+        "negation": false,
+        "family history": false,
+        "stopped medicine": false
+      }
+    }
+  }
+]

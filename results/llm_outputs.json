@@ -1,0 +1,1494 @@
+{
+  "N01|clean|llm_plain": {
+    "age": 68,
+    "sex": "F",
+    "diagnoses": [
+      "atrial fibrillation",
+      "COPD",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [
+      "codeine",
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N01|clean|llm_guided": {
+    "age": 68,
+    "sex": "F",
+    "diagnoses": [
+      "atrial fibrillation",
+      "COPD",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [
+      "codeine",
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N02|clean|llm_plain": {
+    "age": 65,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "20mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N02|clean|llm_guided": {
+    "age": 65,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N03|clean|llm_plain": {
+    "age": 81,
+    "sex": "M",
+    "diagnoses": [
+      "OA of the knees",
+      "chronic obstructive pulmonary disease"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg once daily"
+      },
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg at night"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg od"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "never"
+  },
+  "N03|clean|llm_guided": {
+    "age": 81,
+    "sex": "M",
+    "diagnoses": [
+      "osteoarthritis",
+      "COPD"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      },
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "never"
+  },
+  "N04|clean|llm_plain": {
+    "age": 52,
+    "sex": "F",
+    "diagnoses": [
+      "underactive thyroid",
+      "COPD",
+      "HF"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg od"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N04|clean|llm_guided": {
+    "age": 52,
+    "sex": "F",
+    "diagnoses": [
+      "hypothyroidism",
+      "COPD",
+      "heart failure"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N05|clean|llm_plain": {
+    "age": 85,
+    "sex": "M",
+    "diagnoses": [
+      "chronic obstructive pulmonary disease",
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5mg once daily"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N05|clean|llm_guided": {
+    "age": 85,
+    "sex": "M",
+    "diagnoses": [
+      "COPD",
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N06|clean|llm_plain": {
+    "age": 46,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "AFib"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg bd"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N06|clean|llm_guided": {
+    "age": 46,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg bd"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N07|clean|llm_plain": {
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "Type 2 Diabetes Mellitus",
+      "Osteoarthritis of the knees",
+      "Depression"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "5 mg od"
+      },
+      {
+        "name": "omeprazole",
+        "dose": "20 mg once daily"
+      },
+      {
+        "name": "apixaban",
+        "dose": "5 mg twice daily"
+      }
+    ],
+    "allergies": [
+      "latex",
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N07|clean|llm_guided": {
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "osteoarthritis",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "5 mg"
+      },
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      },
+      {
+        "name": "apixaban",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "latex",
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N08|clean|llm_plain": {
+    "age": 28,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "chronic obstructive pulmonary disease",
+      "type 2 diabetes"
+    ],
+    "medications": [
+      {
+        "name": "bisoprolol",
+        "dose": "5mg"
+      }
+    ],
+    "allergies": [
+      "latex"
+    ],
+    "smoking": "current"
+  },
+  "N08|clean|llm_guided": {
+    "age": 28,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "COPD",
+      "type 2 diabetes"
+    ],
+    "medications": [
+      {
+        "name": "bisoprolol",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "latex"
+    ],
+    "smoking": "current"
+  },
+  "N09|clean|llm_plain": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "T2DM",
+      "OA of the knees"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5 mg once daily"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg at night"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N09|clean|llm_guided": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "type 2 diabetes",
+      "osteoarthritis"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N10|clean|llm_plain": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg twice daily"
+      },
+      {
+        "name": "sertraline",
+        "dose": "100 mg once daily"
+      }
+    ],
+    "allergies": [
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N10|clean|llm_guided": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      },
+      {
+        "name": "sertraline",
+        "dose": "100 mg"
+      }
+    ],
+    "allergies": [
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N11|clean|llm_plain": {
+    "age": 31,
+    "sex": "M",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "20mg twice daily"
+      },
+      {
+        "name": "sertraline",
+        "dose": "50mg bd"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10mg twice daily"
+      }
+    ],
+    "allergies": [
+      "NSAIDs",
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N11|clean|llm_guided": {
+    "age": 31,
+    "sex": "M",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      },
+      {
+        "name": "sertraline",
+        "dose": "50 mg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs",
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N12|clean|llm_plain": {
+    "age": 67,
+    "sex": "M",
+    "diagnoses": [
+      "type II diabetes mellitus"
+    ],
+    "medications": [
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg at night"
+      },
+      {
+        "name": "ramipril",
+        "dose": "5 mg once daily"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg at night"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N12|clean|llm_guided": {
+    "age": 67,
+    "sex": "M",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg"
+      },
+      {
+        "name": "ramipril",
+        "dose": "5 mg"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N13|clean|llm_plain": {
+    "age": 35,
+    "sex": "M",
+    "diagnoses": [
+      "hypothyroidism",
+      "asthma",
+      "AF"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg twice daily"
+      }
+    ],
+    "allergies": [
+      "codeine",
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N13|clean|llm_guided": {
+    "age": 35,
+    "sex": "M",
+    "diagnoses": [
+      "hypothyroidism",
+      "asthma",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg"
+      }
+    ],
+    "allergies": [
+      "codeine",
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N14|clean|llm_plain": {
+    "age": 63,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "furosemide",
+        "dose": "40mg"
+      },
+      {
+        "name": "bisoprolol",
+        "dose": "2.5mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N14|clean|llm_guided": {
+    "age": 63,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "furosemide",
+        "dose": "40 mg"
+      },
+      {
+        "name": "bisoprolol",
+        "dose": "2.5 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N15|clean|llm_plain": {
+    "age": 83,
+    "sex": "F",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg od"
+      },
+      {
+        "name": "sertraline",
+        "dose": "50 mg od"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg once daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N15|clean|llm_guided": {
+    "age": 83,
+    "sex": "F",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg"
+      },
+      {
+        "name": "sertraline",
+        "dose": "50 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N16|clean|llm_plain": {
+    "age": 83,
+    "sex": "F",
+    "diagnoses": [
+      "Heart failure",
+      "Hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg bd"
+      },
+      {
+        "name": "metformin",
+        "dose": "1000 mg at night"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "5 mg od"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N16|clean|llm_guided": {
+    "age": 83,
+    "sex": "F",
+    "diagnoses": [
+      "heart failure",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg"
+      },
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N17|clean|llm_plain": {
+    "age": 61,
+    "sex": "M",
+    "diagnoses": [
+      "chronic obstructive pulmonary disease",
+      "heart failure",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "furosemide",
+        "dose": "40mg"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100mcg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N17|clean|llm_guided": {
+    "age": 61,
+    "sex": "M",
+    "diagnoses": [
+      "COPD",
+      "heart failure",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "furosemide",
+        "dose": "40 mg"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N18|clean|llm_plain": {
+    "age": 47,
+    "sex": "F",
+    "diagnoses": [
+      "OA of the knees",
+      "heart failure"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg od"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg once daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N18|clean|llm_guided": {
+    "age": 47,
+    "sex": "F",
+    "diagnoses": [
+      "osteoarthritis",
+      "heart failure"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N19|clean|llm_plain": {
+    "age": 57,
+    "sex": "F",
+    "diagnoses": [
+      "OA of the knees",
+      "COPD",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg"
+      }
+    ],
+    "allergies": [
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N19|clean|llm_guided": {
+    "age": 57,
+    "sex": "F",
+    "diagnoses": [
+      "osteoarthritis",
+      "COPD",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg"
+      }
+    ],
+    "allergies": [
+      "latex"
+    ],
+    "smoking": "never"
+  },
+  "N20|clean|llm_plain": {
+    "age": 81,
+    "sex": "M",
+    "diagnoses": [
+      "asthma",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20mg twice daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N20|clean|llm_guided": {
+    "age": 81,
+    "sex": "M",
+    "diagnoses": [
+      "asthma",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N21|clean|llm_plain": {
+    "age": 42,
+    "sex": "F",
+    "diagnoses": [
+      "chronic obstructive pulmonary disease"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg bd"
+      },
+      {
+        "name": "bisoprolol",
+        "dose": "2.5 mg once daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N21|clean|llm_guided": {
+    "age": 42,
+    "sex": "F",
+    "diagnoses": [
+      "COPD"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg"
+      },
+      {
+        "name": "bisoprolol",
+        "dose": "2.5 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N22|clean|llm_plain": {
+    "age": 62,
+    "sex": "M",
+    "diagnoses": [
+      "osteoarthritis",
+      "COPD",
+      "low mood",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "apixaban",
+        "dose": "5 mg once daily"
+      },
+      {
+        "name": "metformin",
+        "dose": "1000 mg bd"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N22|clean|llm_guided": {
+    "age": 62,
+    "sex": "M",
+    "diagnoses": [
+      "osteoarthritis",
+      "COPD",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "apixaban",
+        "dose": "5 mg"
+      },
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N23|clean|llm_plain": {
+    "age": 44,
+    "sex": "F",
+    "diagnoses": [
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "salbutamol",
+        "dose": "100mcg once daily"
+      },
+      {
+        "name": "sertraline",
+        "dose": "100mg once daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N23|clean|llm_guided": {
+    "age": 44,
+    "sex": "F",
+    "diagnoses": [
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg"
+      },
+      {
+        "name": "sertraline",
+        "dose": "100 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N24|clean|llm_plain": {
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "chronic obstructive pulmonary disease",
+      "low mood",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg od"
+      },
+      {
+        "name": "furosemide",
+        "dose": "40 mg once daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N24|clean|llm_guided": {
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "COPD",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg"
+      },
+      {
+        "name": "furosemide",
+        "dose": "40 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "current"
+  },
+  "N25|clean|llm_plain": {
+    "age": 62,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "underactive thyroid"
+    ],
+    "medications": [
+      {
+        "name": "apixaban",
+        "dose": "5 mg at night"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg twice daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N25|clean|llm_guided": {
+    "age": 62,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "apixaban",
+        "dose": "5 mg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N26|clean|llm_plain": {
+    "age": 84,
+    "sex": "F",
+    "diagnoses": [
+      "OA of the knees",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50mcg bd"
+      },
+      {
+        "name": "ramipril",
+        "dose": "5mg bd"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N26|clean|llm_guided": {
+    "age": 84,
+    "sex": "F",
+    "diagnoses": [
+      "osteoarthritis",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "levothyroxine",
+        "dose": "50mcg"
+      },
+      {
+        "name": "ramipril",
+        "dose": "5mg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N27|clean|llm_plain": {
+    "age": 56,
+    "sex": "M",
+    "diagnoses": [
+      "AF"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg twice daily"
+      },
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg once daily"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg at night"
+      }
+    ],
+    "allergies": [
+      "codeine"
+    ],
+    "smoking": "former"
+  },
+  "N27|clean|llm_guided": {
+    "age": 56,
+    "sex": "M",
+    "diagnoses": [
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg"
+      },
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "100 mcg"
+      }
+    ],
+    "allergies": [
+      "codeine"
+    ],
+    "smoking": "former"
+  },
+  "N28|clean|llm_plain": {
+    "age": 75,
+    "sex": "F",
+    "diagnoses": [
+      "osteoarthritis",
+      "underactive thyroid",
+      "AFib"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg once daily"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg at night"
+      }
+    ],
+    "allergies": [
+      "latex",
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N28|clean|llm_guided": {
+    "age": 75,
+    "sex": "F",
+    "diagnoses": [
+      "osteoarthritis",
+      "hypothyroidism",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg"
+      },
+      {
+        "name": "levothyroxine",
+        "dose": "50 mcg"
+      }
+    ],
+    "allergies": [
+      "latex",
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N29|clean|llm_plain": {
+    "age": 56,
+    "sex": "F",
+    "diagnoses": [
+      "AFib"
+    ],
+    "medications": [
+      {
+        "name": "sertraline",
+        "dose": "50mg"
+      }
+    ],
+    "allergies": [
+      "penicillin",
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N29|clean|llm_guided": {
+    "age": 56,
+    "sex": "F",
+    "diagnoses": [
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "sertraline",
+        "dose": "50 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin",
+      "codeine"
+    ],
+    "smoking": "never"
+  },
+  "N30|clean|llm_plain": {
+    "age": 56,
+    "sex": "M",
+    "diagnoses": [
+      "osteoarthritis",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "500 mg at night"
+      },
+      {
+        "name": "furosemide",
+        "dose": "40 mg bd"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "5 mg twice daily"
+      }
+    ],
+    "allergies": [],
+    "smoking": "never"
+  },
+  "N30|clean|llm_guided": {
+    "age": 56,
+    "sex": "M",
+    "diagnoses": [
+      "osteoarthritis",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "500 mg"
+      },
+      {
+        "name": "furosemide",
+        "dose": "40 mg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "never"
+  },
+  "N01|augment": "68yo F in clinic today. PMH: AF, COPD, hypothyroidism. No T2DM. Meds: omeprazole 20mg qhs. Bisoprolol stopped last yr 2/t side effects. Nkda: codeine, penicillin (rash). Never smoker. FamHx: mother w/ OA. BP stable. Plan: cont current meds, rvw in 3 mos.",
+  "N01|messy|llm_guided": {
+    "age": 68,
+    "sex": "F",
+    "diagnoses": [
+      "atrial fibrillation",
+      "COPD",
+      "hypothyroidism"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [
+      "codeine",
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N02|augment": "65F routine f/u. PMH asthma. No dep. Current meds: ramipril 2.5mg qhs, atorvastatin 20mg qd. Apixaban d/c'd last yr r/t s/e. Allg: penicilin (rash). Ex-smoker, quit 2015. FamHx: mother CKD3. BP stable. Plan: cont meds, r/v 3mos.",
+  "N02|messy|llm_guided": {
+    "age": 65,
+    "sex": "F",
+    "diagnoses": [
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "2.5 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N03|augment": "81M, never smoked. Rev today - BP stable. PMH: COPD, knee OA. Neg T2DM. Meds: atorvas 20mg daily, amlodipine 10mg od, salbutamol 100mcg qhs. Stopped sertraline last yr (side effx). Allergies: NSAIDs -> rash. FamHx: father HTN. Plan: cont meds, rev in 3 mos.",
+  "N03|messy|llm_guided": {
+    "age": 81,
+    "sex": "M",
+    "diagnoses": [
+      "COPD",
+      "osteoarthritis"
+    ],
+    "medications": [
+      {
+        "name": "atorvastatin",
+        "dose": "20 mg"
+      },
+      {
+        "name": "amlodipine",
+        "dose": "10 mg"
+      },
+      {
+        "name": "salbutamol",
+        "dose": "100 mcg"
+      }
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "never"
+  },
+  "N04|augment": "52yo F seen in clnic today. PMH: hypothyroid, COPD, HF. No knee OA. Meds: metformine 1000mg OD. Sertraline dc'd last yr 2/2 side fx. Allergies: PCN (rash). Never smoker. FamHx: mother w/ HTN. BP stable. Plan: cont tx, rvu 3 mos.",
+  "N04|messy|llm_guided": {
+    "age": 52,
+    "sex": "F",
+    "diagnoses": [
+      "hypothyroidism",
+      "COPD",
+      "heart failure"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "never"
+  },
+  "N05|augment": "85M rountine f/u. PMH: COPD, asthma. No knee OA. Meds: amlodipine 5mg QD. Atorva stopped last yr 2/2 side effects. All: PCN -> rash. Ex-smoker (quitted 10 yrs ago). FamHx: bro w/ HTN. BP stable. Plan: cont meds, r/v 3 mos.",
+  "N05|messy|llm_guided": {
+    "age": 85,
+    "sex": "M",
+    "diagnoses": [
+      "COPD",
+      "asthma"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "smoking": "former"
+  },
+  "N06|augment": "46yo F, ex-smoker (quit 10yrs). PMH: HTN, AFib. No COPD. NKDA. \nMeds: omeprazole 20mg bd. Salbutamol d/c last yr d/t SEs. \nFamhx: bro w/ depression. \nBP stable today. \nPlan: cont meds, f/u in 3 mos.",
+  "N06|messy|llm_guided": {
+    "age": 46,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N07|augment": "43yo F rev today. PMH: T2DM, knee OA, depr. No hypothyroidism. Meds: ramipril 5mg od, omeprazole 20mg od, apixaban 5mg bid. Stopped atorvastatin last yr s/p side fx. All: latex, NSAIDs (rash). Ex-smoker (quit 2015). FamHx: mom w/ HTN. BP stable. Plan: cont meds, rev in 3 mos.",
+  "N07|messy|llm_guided": {
+    "age": 43,
+    "sex": "F",
+    "diagnoses": [
+      "type 2 diabetes",
+      "osteoarthritis",
+      "depression"
+    ],
+    "medications": [
+      {
+        "name": "ramipril",
+        "dose": "5 mg"
+      },
+      {
+        "name": "omeprazole",
+        "dose": "20 mg"
+      },
+      {
+        "name": "apixaban",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "latex",
+      "NSAIDs"
+    ],
+    "smoking": "former"
+  },
+  "N08|augment": "28F routine f/u. PMH: HTN, COPD, T2DM. No asthma. Smoker. Meds: bisoprolol 5mg QD. Atorvastatin DCd last yr 2/2 sfx. Alls: latex -> rash. FamHx: mother w/ CKD. BP stable. Pln: cont meds, rvw in 3 mos.",
+  "N08|messy|llm_guided": {
+    "age": 28,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "COPD",
+      "type 2 diabetes"
+    ],
+    "medications": [
+      {
+        "name": "bisoprolol",
+        "dose": "5 mg"
+      }
+    ],
+    "allergies": [
+      "latex"
+    ],
+    "smoking": "current"
+  },
+  "N09|augment": "Rev Mrs X, 54yo F, ex-smoker (quit '15). PMH: HTN, T2DM, knee OA. Neg HF. Famhx: hypothyroid (dad). NKDA. Meds: amlodipine 5mg QD, atorvastatin 40mg QHS. Levothyroxyne stopped last yr s/p side effects. BP stable. Pln: cont meds, rvw 3mos.",
+  "N09|messy|llm_guided": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "hypertension",
+      "type 2 diabetes",
+      "osteoarthritis"
+    ],
+    "medications": [
+      {
+        "name": "amlodipine",
+        "dose": "5 mg"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg"
+      }
+    ],
+    "allergies": [],
+    "smoking": "former"
+  },
+  "N10|augment": "54yo F seen in clinic today. PMH: CKD. No HTN. Meds: metfomin 1000mg BID, sertraline 100mg daily. Levothyroxine d/c'd last yr 2/2 sfx. NKFA except codeine -> rash. Never smoker. Famhx: mother w/ COPD. BP stable. Plan: cont current meds, f/u 3 mos.",
+  "N10|messy|llm_guided": {
+    "age": 54,
+    "sex": "F",
+    "diagnoses": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg"
+      },
+      {
+        "name": "sertraline",
+        "dose": "100 mg"
+      }
+    ],
+    "allergies": [
+      "codeine"
+    ],
+    "smoking": "never"
+  }
+}

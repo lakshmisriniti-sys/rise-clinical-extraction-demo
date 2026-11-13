@@ -1,0 +1,197 @@
+{
+  "clean|rules": {
+    "n_notes": 30,
+    "diagnoses": {
+      "precision": 0.5041322314049587,
+      "recall": 1.0,
+      "f1": 0.6703296703296704
+    },
+    "medications": {
+      "precision": 0.6629213483146067,
+      "recall": 1.0,
+      "f1": 0.7972972972972973
+    },
+    "allergies": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "age": {
+      "accuracy": 1.0
+    },
+    "sex": {
+      "accuracy": 1.0
+    },
+    "smoking": {
+      "accuracy": 1.0
+    },
+    "dose": {
+      "accuracy": 1.0
+    },
+    "fooled: negation": {
+      "rate": 1.0
+    },
+    "fooled: family history": {
+      "rate": 1.0
+    },
+    "fooled: stopped medicine": {
+      "rate": 1.0
+    }
+  },
+  "clean|llm_plain": {
+    "n_notes": 30,
+    "diagnoses": {
+      "precision": 0.5873015873015873,
+      "recall": 0.6065573770491803,
+      "f1": 0.5967741935483871
+    },
+    "medications": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "allergies": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "age": {
+      "accuracy": 1.0
+    },
+    "sex": {
+      "accuracy": 1.0
+    },
+    "smoking": {
+      "accuracy": 1.0
+    },
+    "dose": {
+      "accuracy": 0.1694915254237288
+    },
+    "fooled: negation": {
+      "rate": 0.0
+    },
+    "fooled: family history": {
+      "rate": 0.0
+    },
+    "fooled: stopped medicine": {
+      "rate": 0.0
+    }
+  },
+  "clean|llm_guided": {
+    "n_notes": 30,
+    "diagnoses": {
+      "precision": 0.9838709677419355,
+      "recall": 1.0,
+      "f1": 0.991869918699187
+    },
+    "medications": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "allergies": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "age": {
+      "accuracy": 1.0
+    },
+    "sex": {
+      "accuracy": 1.0
+    },
+    "smoking": {
+      "accuracy": 1.0
+    },
+    "dose": {
+      "accuracy": 0.9830508474576272
+    },
+    "fooled: negation": {
+      "rate": 0.0
+    },
+    "fooled: family history": {
+      "rate": 0.0
+    },
+    "fooled: stopped medicine": {
+      "rate": 0.0
+    }
+  },
+  "messy|rules": {
+    "n_notes": 10,
+    "diagnoses": {
+      "precision": 0.5666666666666667,
+      "recall": 0.7391304347826086,
+      "f1": 0.6415094339622641
+    },
+    "medications": {
+      "precision": 0.6521739130434783,
+      "recall": 0.8823529411764706,
+      "f1": 0.75
+    },
+    "allergies": {
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.8235294117647058
+    },
+    "age": {
+      "accuracy": 0.6
+    },
+    "sex": {
+      "accuracy": 0.8
+    },
+    "smoking": {
+      "accuracy": 0.7
+    },
+    "dose": {
+      "accuracy": 0.9333333333333333
+    },
+    "fooled: negation": {
+      "rate": 0.7
+    },
+    "fooled: family history": {
+      "rate": 0.6
+    },
+    "fooled: stopped medicine": {
+      "rate": 0.8
+    }
+  },
+  "messy|llm_guided": {
+    "n_notes": 10,
+    "diagnoses": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "medications": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "allergies": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "age": {
+      "accuracy": 1.0
+    },
+    "sex": {
+      "accuracy": 1.0
+    },
+    "smoking": {
+      "accuracy": 1.0
+    },
+    "dose": {
+      "accuracy": 1.0
+    },
+    "fooled: negation": {
+      "rate": 0.0
+    },
+    "fooled: family history": {
+      "rate": 0.0
+    },
+    "fooled: stopped medicine": {
+      "rate": 0.0
+    }
+  }
+}
